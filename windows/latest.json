@@ -1,0 +1,9 @@
+{
+  "version": "0.1.102",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbWt1UXFjYmZwNTduVzg4Nyt6MGkvQ21rY28xOCtTc1ZxTE5VNysva0ZKQ2p5c0J6eE9NeEd4ZnJUTDhFa2pXMjBTYUlmV05nRHdxRG1SWlBlMHdwY01DWlA3Z0p3MVFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzg5ODU4CWZpbGU6RGlNb1R2XzAuMS4xMDJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS4xMDIKRzVQV0VsVkFzUDZkUmpRdHhXN294ZisvTzNvNFk3eWVhSGRqUjZDclJ0bml3TnY2STJsZHVOME1hcW5FQU53KzRvNVNXak9wNFBFQlNudnlkVVRsQ2c9PQo=",
+      "url": "https://github.com/dimotv/updates/releases/download/win-v0.1.102/dimotv-windows-0.1.102-setup.exe"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DiMoTv – Datenschutz bei Diagnoseberichten</title>
+</head>
+<body>
+  <main>
+    <h1>Datenschutz bei Diagnoseberichten</h1>
+    <p>Der Entwickler von DiMoTv verarbeitet die freiwillig gesendeten Diagnoseberichte
+    in seinem Homelab. Kontakt: <a href="mailto:tv@dimotv.com">tv@dimotv.com</a>.</p>
+    <h2>Deine Einwilligung</h2>
+    <p>Rechtsgrundlage ist deine Einwilligung. Ohne Zustimmung wird kein Bericht gesendet.
+    Automatische Berichte enthalten nur Störungen und Wiedergabedaten ab der Einwilligung;
+    älteres lokal Aufgezeichnetes nur per bewusstem Einmal-Senden.
+    Du kannst die Einwilligung jederzeit bei „Diagnosedaten senden“ widerrufen.
+    Am TV: Einstellungen › Hilfe und Diagnose › Diagnosedaten senden.
+    Im Web und unter Windows: Einstellungen › Hilfe und Diagnose › Hilfe und Datenschutz › Diagnosedaten senden.
+    Ausschalten stoppt den Versand sofort und leert
+    den Sendepuffer. Einen einzelnen Bericht kannst du vor dem einmaligen Senden ansehen.
+    Die letzten drei gesendeten Berichte kannst du in der App nachlesen.</p>
+    <h2>Welche Daten werden gesendet?</h2>
+    <ul>
+      <li>App-Version, Plattform, Betriebssystem und Version, Gerätemodell,
+      CPU-Architektur, RAM und freier Speicher.</li>
+      <li>Decoder, Displaymodi und HDR, Netzart, WLAN-Band und Signalstärke,
+      VPN an oder aus.</li>
+      <li>Wiedergabe-Technik und Kennzahlen: Startzeit, Stillstand, Codec, Auflösung,
+      Bitrate, fps, Protokoll (TS/HLS), Puffer, Fehlercode und Stacktrace.</li>
+      <li>Die bereits geschwärzte Ereigniskette der letzten Minuten vor einem Fehler.</li>
+      <li>Der Anbieter als Pseudonym: ein Hash des Hostnamens mit festem Salz.
+      Mit einer Liste bekannter Anbieter lässt sich dieses Pseudonym zurückrechnen.</li>
+      <li>Eine zufällige Installations-ID (128 Bit), die du in der App zurücksetzen kannst.</li>
+    </ul>
+    <h2>Welche Daten werden ausdrücklich nicht gesendet?</h2>
+    <p>Keine Zugangsdaten, Benutzername, Passwort oder PIN; keine Stream-URLs,
+    Hostnamen im Klartext oder IP-Adressen; kein Sendername, Programmtitel oder
+    Senderlisten; keine Seriennummer, Android-ID, MAC oder SSID; keine Kontodaten,
+    Ablaufdaten, Favoriten oder Verlauf. Sehverhalten wird nicht aufgezeichnet.</p>
+    <h2>Wozu und wohin?</h2>
+    <p>Die Berichte helfen, Abstürze, Wiedergabefehler und Hänger mit ihrem Umfeld
+    zu untersuchen und Fehler nach Gerät, Plattform, Version und Anbieter-Pseudonym
+    zu gruppieren. Die Übertragung führt über HTTPS an diagnose.dimotv.com,
+    durch Cloudflare als Schutzschicht und einen Cloudflare Tunnel zum Homelab-Dienst
+    des Entwicklers.
+    Cloudflare verarbeitet dabei als Transportdienst die IP-Adresse und den über HTTPS
+    übertragenen Datenverkehr; in der Diagnosedatenbank wird keine IP gespeichert.
+    Cloudflare beendet die HTTPS-Verbindung und kann dabei auch den Inhalt der Berichte verarbeiten.
+    Fremde erhalten keinen
+    Zugang zur internen Auswertung. Es gibt keine Weitergabe der gespeicherten Berichte.</p>
+    <h2>Aufbewahren und löschen</h2>
+    <p>Berichte werden für 90 Tage ab Empfang aufbewahrt. Unter „Meine Daten löschen“
+    kannst du die Berichte deiner Installations-ID beim Entwickler löschen lassen.
+    „Installations-ID zurücksetzen“ erzeugt eine neue Kennung; es löscht die alten
+    Berichte beim Entwickler nicht. Lösche sie deshalb bei Bedarf vor dem Zurücksetzen:
+    Danach kann die App sie mit der alten ID nicht mehr löschen.</p>
+  </main>
+</body>
+</html>
